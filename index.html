@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Connect 4</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg row justify-content-around">
+        <div>
+            <a>
+                <h1 id="title">Game <i class="fas fa-gamepad"></i> Center</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="game-header">
+        <center>
+            <h2>Connect 4</h2>
+        </center>
+    </div>
+    <table id='game-board'>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+            <td class="square" onclick="newTurn(this)" onclick="isWin()">
+                <div class="coin">
+
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

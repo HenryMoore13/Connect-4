@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.navbar {
+    background-color: #ffa500;
+}
+body {
+    background-color: black;
+}
+h2 {
+    color: #ffa500;
+}
+#game-board {
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#game-board tr td {
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+}
+
+#game-board tr td:hover {
+    background: #e4e4e4;
+    cursor: pointer;
+}
+td.square {
+    background-color: #ffa500;
+}
+
+.square div {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 3px;
+}
